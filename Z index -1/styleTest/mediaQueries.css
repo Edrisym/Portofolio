@@ -1,0 +1,600 @@
+/* 1040px size of screen media queries */
+@media (max-width: 68em) {
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* the defual section  */
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .paddingSection {
+    padding: 6.4rem 0;
+  }
+
+  .heading-primary {
+    font-size: 5rem;
+    line-height: 1.05;
+    margin-bottom: 2.4rem;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 2.4rem;
+  }
+  .subheading {
+    font-size: 1.4rem;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* mobile nav button section */
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .mainNavigation {
+    background-color: rgba(182, 214, 254, 0.092);
+
+    backdrop-filter: blur(1.5rem);
+    -webkit-backdrop-filter: blur(1.5rem);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.46, -0.06, 0.94, 0.5);
+
+    transform: translateX(100%);
+
+    /* hide navigation */
+    /* allows NO transition at all */
+    /* display: none; */
+
+    /* hide it visiually */
+
+    opacity: 0;
+
+    /* make it unaccesesible p mouse and keyboard */
+    pointer-events: none;
+
+    /* hide from scree readers */
+    visibility: hidden;
+  }
+
+  .nav-open .mainNavigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .NavigationLink:link,
+  .NavigationLink:visited {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 3.6rem;
+    transition: all 0.3s;
+    color: #205a91;
+    background-color: #b6d6fe00;
+    box-shadow: none;
+  }
+
+  .NavigationLink:hover,
+  .NavigationLink:active {
+    color: #e9f4fe;
+    letter-spacing: 0.3rem;
+  }
+  .mainNavigationList {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu"] {
+    display: none;
+  }
+  .nav-open .icon-mobile-nav[name="close"] {
+    display: block;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* hero sectoin */
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .hero {
+    display: grid;
+    gap: 0;
+    padding: 0 0 0 10rem;
+  }
+  .countainerHeroImg {
+    width: 85%;
+  }
+}
+
+/* 960px size of screen media queries */
+
+@media (max-width: 60em) {
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* student at section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .items-opacity {
+    filter: brightness(1);
+    opacity: 100%;
+  }
+  .grid--featured {
+    gap: 0;
+  }
+  .items img.w3school {
+    height: 8rem;
+    width: 8rem;
+  }
+  .items img.udemy {
+    height: 5.5rem;
+    width: 18.3rem;
+  }
+
+  .NavigationLinkItem:link,
+  .NavigationLinkItem:visited {
+    font-size: 2rem;
+    padding: 1.4rem 2.2rem;
+  }
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* About me  section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .skill--section ion-icon {
+    font-size: 4.4rem;
+    padding: 1.8rem;
+  }
+  .all--images {
+    display: grid;
+    gap: 0;
+  }
+
+  .ills {
+    align-self: center;
+    justify-self: center;
+  }
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* cards and certificates section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    row-gap: 2rem;
+  }
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* CTA section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .cta {
+    padding-right: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .email--to {
+    padding: 2.4rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+    line-height: 1.05;
+    margin-bottom: 2.4rem;
+  }
+  .heading-secondary {
+    font-size: 2.4rem;
+    line-height: 1;
+    margin-bottom: 2.4rem;
+  }
+  .subheading {
+    font-size: 1rem;
+  }
+  .cta--text {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 56em) {
+  .NavigationLinkItem:link,
+  .NavigationLinkItem:visited {
+    font-size: 1.6rem;
+    padding: 1.4rem 2.2rem;
+  }
+}
+
+/* 740px size of screen media queries */
+
+@media (max-width: 46em) {
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* defualt section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  html {
+    font-size: 52.5%;
+  }
+  .subheading {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /*skills and icon - prgramming langauges section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .course--content .flex--items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    row-gap: 2rem;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* certificate  section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  a.link--to:link,
+  a.link--to:visited {
+    font-size: 2rem;
+    background-color: #0e3c67;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.8rem;
+  }
+
+  a.link--to:hover,
+  a.link--to:active {
+    font-size: 2rem;
+
+    background-color: #5183b1;
+    color: #fff;
+    padding: 0.2rem;
+    border-radius: 0.8rem;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* footer section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .link--blog {
+    font-size: 1.7rem;
+  }
+}
+
+/* 650px size of screen media queries */
+
+@media (max-width: 40em) {
+  .paddingSection {
+    padding: 3.2rem 0;
+  }
+  html {
+    font-size: 45.5%;
+  }
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* CTA section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .cta {
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+  }
+  .email--to {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .cta-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .btn--form {
+    align-self: center;
+    text-align: center;
+    padding: 1.8rem 1.6rem;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: inherit;
+    margin-top: 3rem;
+  }
+  .cta-form input {
+    font-size: 1.8rem;
+  }
+}
+
+/* 550px size of screen media queries */
+
+@media (max-width: 35em) {
+  .heroTextBox {
+    backdrop-filter: blur(0rem);
+    -webkit-backdrop-filter: blur(0rem);
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* default sectoin */
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  html {
+    font-size: 40.5%;
+  }
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* hero sectoin */
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 0;
+  }
+  .heroImg .countainerHeroImg {
+    text-align: center;
+    width: 50%;
+  }
+  .heroImg {
+    width: 50%;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* hero text box sectoin */
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .heroTextBox {
+    background-color: unset;
+    box-shadow: unset;
+  }
+  .heroTextBox * {
+    text-align: center;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* student at  sectoin */
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .grid--featured {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+  .illustration--boy {
+    width: 50%;
+  }
+
+  .NavigationLinkItem:link,
+  .NavigationLinkItem:visited {
+    font-size: 3rem;
+    padding: 1.4rem 2.2rem;
+  }
+
+  .items .NavigationLinkItem {
+    grid-column: span 2;
+  }
+
+  /* circles design */
+  .BefterR::before,
+  .BefterR::after {
+    top: 40%;
+    left: 50%;
+    transform: translate(-75%, -40%);
+  }
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* About me  section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .illustration--part {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .all--cards {
+    column-gap: 3rem;
+  }
+  .the--cards {
+    margin: 0;
+    text-align: center;
+  }
+  .io-icon {
+    /* display: grid; */
+    align-self: center;
+    justify-self: center;
+  }
+  .all--images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* skills and progrmm  section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  a.link--to:link,
+  a.link--to:visited {
+    padding: 1.2rem;
+  }
+
+  .course--content .flex--items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    row-gap: 5rem;
+  }
+  .cards {
+    column-gap: 2rem;
+    row-gap: 0;
+  }
+  .cta {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .cta-img {
+    width: 50%;
+    justify-self: center;
+  }
+  .email--to {
+    /* grid-row: 1/2; */
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 28em) {
+  html {
+    font-size: 43.5%;
+  }
+
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.5rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3.2rem;
+  }
+
+  .subheading {
+    font-size: 1.3rem;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* certificate section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .card span {
+    font-size: 2rem;
+  }
+  .all--images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Befter::before {
+    width: 130%;
+
+    padding-bottom: 130%;
+  }
+  .Befter::after {
+    width: 80%;
+
+    padding-bottom: 80%;
+  }
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  /* footer  section*/
+  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .link--blog {
+    font-size: 1.8rem;
+  }
+
+  .cta--text--box {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 25em) {
+  html {
+    font-size: 49.5%;
+  }
+
+  .subheading {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .cta--text--box {
+    font-size: 2.8rem;
+  }
+  .email--to {
+    padding: 2rem;
+  }
+  .cta-form label {
+    padding: 1.2rem;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .cta-form input,
+  .cta-form select {
+    font-size: 1.6rem;
+  }
+  .btn--form {
+    margin-top: 5.5rem;
+  }
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* fixing safari flexbox gap*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* .no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+} */
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 
+/ 30 / 36 / 44 / 52 /
+62 / 74 / 86 / 98
+
+/* first of all you can do this edris no worries
+ok? */
+/* 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/

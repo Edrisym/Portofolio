@@ -1,0 +1,488 @@
+/* first of all you can do this edris no worries
+ok? */
+
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 
+/ 30 / 36 / 44 / 52 /
+62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+from instagram
+#9AB8BA
+#
+#
+#
+
+
+- Primary: 
+- Tints:
+
+
+- Shades: 
+
+- Accents:
+- Greys
+
+
+ (lightest  allowed on )
+ (lightest  allowed on )
+
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* A good source for downloading svg nad logo  */
+
+/* https://www.svgrepo.com/collection/social-media-colored-circle-icons/ */
+
+*:focus {
+  outline: none;
+  outline: 0.4rem solid #0e3c67;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+
+  color: #0e3150;
+  background-color: #acc7e1;
+
+  overflow-x: hidden;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+}
+
+.logo {
+  background-color: #0e3c67;
+  color: #bfdbf6;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+  padding: 1.6rem 3.4rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+  margin-left: 5rem;
+  transition: all 0.3s;
+}
+
+/* ------------------------------ */
+/* navbar section */
+/* ------------------------------ */
+
+.mainNavigationList:last-child {
+  margin-right: 2rem;
+}
+.mainNavigationList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.NavigationLinkItem:link,
+.NavigationLinkItem:visited,
+.NavigationLink:link,
+.NavigationLink:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  padding: 1.2rem 3.2rem;
+  border-radius: 9px;
+  color: #bfdbf6;
+  background-color: #0e3c67;
+  text-align: center;
+}
+
+.NavigationLink:hover,
+.NavigationLink:active {
+  background-color: #19558e;
+  color: #e9f4fe;
+  box-shadow: inset 0 0 0 0.15rem #a3d0fa;
+  font-weight: 800;
+}
+
+.logo:hover,
+.logo:active {
+  background-color: #19558e;
+  color: #e9f4fe;
+  box-shadow: inset 0 0 0 0.1rem #a3d0fa;
+}
+/* button section */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  transition: all 0.2s;
+  margin-right: 5rem;
+}
+
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #bfdbf6;
+}
+.menu-icon {
+  color: #bfdbf6;
+}
+.icon-mobile-nav[name="close"] {
+  display: none;
+}
+.icon-mobile-nav[name="close"]:hover,
+.icon-mobile-nav[name="menu"]:hover {
+  color: #1a3f63;
+}
+/* call to action button  */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #0e3c67;
+  color: #bfdbf6;
+  border-radius: 1.2rem;
+  padding: 1rem 2.8rem;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn {
+  transition: all 0.5s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #5183b1;
+  box-shadow: 1px 1px 15px 0.4px #c1deff6c;
+}
+
+.additional--description {
+  padding-top: 1rem;
+}
+
+/* default section */
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.text-align {
+  text-align: center;
+}
+
+.gap--20--px {
+  gap: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 4.6rem;
+}
+
+.margin--buttom {
+  margin-bottom: 2.5rem;
+}
+
+.paddingSection {
+  padding: 9.6rem 0;
+}
+
+.padding {
+  padding: 1.5rem 0;
+}
+
+.grid--2--cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5--cols {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid--6--cols {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.items-opacity,
+.programming--icon {
+  filter: brightness(0);
+  opacity: 50%;
+}
+.items-opacity:hover,
+.programming--icon:hover {
+  filter: brightness(1);
+  opacity: 100%;
+}
+/* from another project jonas the instructor */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #0e3150;
+}
+
+.heading-primary {
+  font-size: 5.8rem;
+  line-height: 1.05;
+  margin-bottom: 2.4rem;
+}
+
+.heading-secondary {
+  font-size: 3.7rem;
+  line-height: 1;
+  margin-bottom: 2.4rem;
+}
+
+.heading-tertiary {
+  font-size: 3.4rem;
+  line-height: 1.2;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.075rem;
+  line-height: 1.2;
+}
+/* from another project jonas the instructor */
+
+.skill--section ion-icon {
+  font-size: 6.4rem;
+  padding: 2.1rem;
+}
+
+.programming--icon {
+  width: 7rem;
+  height: 7rem;
+}
+.center-text {
+  text-align: center;
+}
+.featured--section ul {
+  list-style: none;
+}
+/* =========================== */
+/* card setting */
+/* =========================== */
+
+.card {
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem #00000040;
+  border-radius: 1.3rem;
+  padding: 1rem;
+  margin-top: 3rem;
+  row-gap: 0.5rem;
+}
+.card--num-3 {
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.card:hover {
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem #00000070;
+}
+.instructor--name {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+.course--icon {
+  height: 2rem;
+  width: 2rem;
+  padding: 0 1rem 0 0;
+  color: #5183b1;
+}
+
+.course--img {
+  border-radius: 0.5rem;
+}
+
+.instructor--img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.list--attribute li {
+  list-style: none;
+  margin: 2rem 0;
+}
+
+.list--li {
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+.description {
+  font-size: 1.8rem;
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+.link--to:link,
+.link--to:visited {
+  font-size: 2.2rem;
+  color: #2c4760;
+  margin: 2.6rem 0;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+.arrow {
+  display: none;
+}
+
+.link--to:hover,
+.link--to:active {
+  font-size: 2.2rem;
+  color: #051422;
+  margin: 2.6rem 0;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.link--to:hover .arrow {
+  display: inline;
+}
+/* =========================== */
+/*          Email to           */
+/* =========================== */
+.btn--form {
+  padding: 2rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: inherit;
+}
+.btn--form:hover {
+  letter-spacing: 0.1rem;
+}
+.box {
+  transition: all 0.2s;
+}
+.box:hover {
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem #00000055;
+}
+/* ---------------- */
+/* Footer  -  contact me part */
+/* ---------------- */
+
+.contact--me--section {
+  border-top: solid 0.1rem #000;
+}
+.footer--icons {
+  transition: all 0.4s;
+}
+
+.footer--icons a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.footer--icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.blog-content a {
+  color: #0e3c67;
+  font-weight: 800;
+  cursor: pointer;
+}
+.blog-content a:hover {
+  color: #4ea0ed;
+  font-weight: 800;
+}
+.footer--icons ion-icon {
+  width: 5rem;
+  height: 5rem;
+  color: #0e3150;
+}
+
+ion-icon.whatsapp:hover {
+  color: #075e54;
+}
+
+ion-icon.linkedin:hover {
+  color: #0072b1;
+}
+
+ion-icon.instagram:hover {
+  color: #7b0f4c;
+}
+ion-icon.mail:hover {
+  color: #b56c06;
+}

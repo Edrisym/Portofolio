@@ -1,0 +1,240 @@
+.header {
+  max-width: 100%;
+  background-color: #19558e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hero {
+  gap: 9.6rem;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  background-color: #19558e;
+
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.063);
+
+  z-index: 999;
+}
+
+.sticky .hero-section {
+  margin-top: 9.6rem;
+}
+/* ==================================================== */
+/* images' background using psudo class in css */
+/* this design is from center to right side */
+/* ==================================================== */
+.Befter {
+  position: relative;
+}
+
+.Befter::before,
+.Befter::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -50%);
+
+  z-index: -1;
+}
+
+.Befter::before {
+  width: 80%;
+
+  padding-bottom: 80%;
+  background-color: #92badc;
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem #00000025;
+}
+.Befter::after {
+  width: 55%;
+
+  padding-bottom: 55%;
+  background-color: #86b2d8;
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem #00000020;
+}
+/* ==================================================== */
+/* images' background using psudo class in css */
+/* ==================================================== */
+
+/* ==================================================== */
+/* images' background using psudo class in css */
+/* this is from left side to center */
+/* ==================================================== */
+
+.BefterR {
+  position: relative;
+}
+
+.BefterR::before,
+.BefterR::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -40%);
+
+  z-index: -1;
+}
+
+.BefterR::before {
+  width: 70%;
+
+  padding-bottom: 70%;
+  background-color: #92badc;
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem #00000025;
+}
+.BefterR::after {
+  width: 45%;
+
+  padding-bottom: 45%;
+  background-color: #86b2d8;
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem #00000020;
+}
+
+/* ==================================================== */
+/* images' background using psudo class in css */
+/* ==================================================== */
+
+.heroTextBox {
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+
+  padding: 5rem;
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem #00000015;
+  border-radius: 1rem;
+}
+
+.textList {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style: none;
+  gap: 1rem;
+  margin: 2.4rem 0 2rem 0;
+}
+
+.selfstudy--part {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.grid--featured {
+  align-items: center;
+  justify-content: space-around;
+  gap: 9rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+.linkstudy {
+  align-self: center;
+  justify-self: center;
+}
+.items img.w3school {
+  height: 10rem;
+  width: 10rem;
+}
+.items img.udemy {
+  height: 7.5rem;
+  width: 23.3rem;
+}
+
+.skill--section {
+  align-items: center;
+  justify-content: center;
+}
+.programming--icon,
+.items-opacity,
+.all--images img {
+  transition: all 0.3s;
+}
+.all--images {
+  gap: 2rem;
+}
+.ills {
+  display: grid;
+  align-self: center;
+  justify-self: center;
+}
+
+.all--images img:hover {
+  transform: scale(1.1);
+}
+
+.the--cards {
+  margin: 8rem 0 4rem 0;
+  display: grid;
+}
+
+.flex--items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.align--items {
+  display: flex;
+  align-items: center;
+}
+/* -------------------- */
+/* call to action email section */
+/* -------------------- */
+.email--to {
+  backdrop-filter: blur(1.5rem);
+  -webkit-backdrop-filter: blur(1.5rem);
+  border-radius: 2rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem #00000015;
+}
+.cta {
+  align-items: center;
+  justify-content: center;
+}
+.cta-form {
+  display: flex;
+  flex-direction: column;
+}
+.cta-form label {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 2rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #cbe3f8;
+  border-radius: 9px;
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0.1rem 0.1rem 1rem 0.5rem #00000015;
+}
